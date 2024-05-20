@@ -68,6 +68,7 @@ a,b,c=v                      # присваивание элементов сп�
 print ('v=',v, '; a=',a,'b=',b,'c=',c) # v= [4, 5, 57] ; a= 4 b= 5 c= 57
 a=b=c=1
 print('a=',a,'b=',b,'c=',c)  # a= 1 b= 1 c= 1
+#--------------------------
 t = tuple(['red', 'green', 'blue'])
-r, green, blue = t
-print('r:{} g:{} b:{}'.format(red, green, blue))# r:red g:green b:blue
+r, g, b = t
+print('r:{} g:{} b:{}'.format(r, g, b))# r:red g:green b:blue
