@@ -1,85 +1,85 @@
-# print('СЛОВАРИ !!!!!!!!!!!!!!!!')
+print('СЛОВАРИ !!!!!!!!!!!!!!!!')
 # Словари — неупорядоченные коллекции произвольных объектов с доступом по ключу.
 # В списках в качестве ключа используется индекс элемента. В словаре для определения
 # элемента используется значение ключа (строка, число).
-# d={}
-# d=dict()
-# d['q']='qwerty'
-# print(d)                  # {'q': 'qwerty'}
-# d['w']='qwerty'
-# print(d)                  # {'q': 'qwerty', 'w': 'qwerty'}
-# print(d['w'])             # qwerty
-# d[985]=754                # словари могут содержать эл-ты разных типов(в т.ч. списки, словари, множества ...)
-# print(d)                  # {'q': 'qwerty', 'w': 'qwerty', 985: 754}
+d={}
+d=dict()
+d['q']='qwerty'
+print(d)                  # {'q': 'qwerty'}
+d['w']='qwerty'
+print(d)                  # {'q': 'qwerty', 'w': 'qwerty'}
+print(d['w'])             # qwerty
+d[985]=754                # словари могут содержать эл-ты разных типов(в т.ч. списки, словари, множества ...)
+print(d)                  # {'q': 'qwerty', 'w': 'qwerty', 985: 754}
 
-# dictionary = {}
-# dictionary = {'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
-# print(dictionary)         # {'up':'↑', 'left':'←', 'down':'↓', 'right':'→'}
-# print(dictionary['left']) # ← типы ключей могут отличаться
-# print(dictionary['up'])   # ↑ типы ключей могут отличаться
-# dictionary['left'] = '⇐'
-# print(dictionary['left']) # ⇐
-# # print(dictionary['type']) # KeyError: 'type'
-# del dictionary['left']    # удаление элемента
-# print(dictionary)         # {'up': '↑', 'down': '↓', 'right': '→'}
-# print('1.Работа цикла for_ВЫВОДИМ КЛЮЧИ----------------------')
-# for i in dictionary:       #ВЫВОДИТ КЛЮЧИ :
-#     print(i)               # up
-#                            # down
-#                            # right
-# print('2.Работа цикла for_ВЫВОДИМ ЭЛЕМЕНТЫ---------------------')
-# for i in dictionary:       #ВЫВОДИТ элементы :
-#     print(dictionary[i])   # ↑
-#                            # ↓
-#                            # →
-# print(dictionary.items())  # dict_items([('up', '↑'), ('down', '↓'), ('right', '→')])
-#                            # dictionary.items()-выводит список, где каждый элемент-кортеж из двух элементов: Ключ, Значение
-# print('3.Работа цикла for_items()--------------------')
-# for (k,v) in dictionary.items():   #в k -ключи,в v-значение :
-#     print(k,v)                     # up ↑
-#                                    # down ↓
-#                                    # right →
-# print('4.Работа цикла for_items()--------------------')
-# for (k) in dictionary.items():   # в k запишит кортежи-элементы списка :
-#     print(k)                     # ('up', '↑')
-#                                  # ('down', '↓')
-#                                  # ('right', '→')
-# print('МНОЖЕСТВА !!!!!!!!!!!!!!!!!!!!!!!!!!')
-# # Множества содержат в себе уникальные элементы, не обязательно упорядоченные.
-# # Одно множество может содержать значения любых типов. Если у Вас есть два множества,
-# # Вы можете совершать над ними любые стандартные операции, например, объединение,
-# # пересечение и разность. Давайте разберем их.
-# q=set()                # создаем пустое множество
-# print('множество q=',q) # множество q= set()
-# colors = {'red', 'green', 'blue'}
-# print(colors)          # {'red', 'green', 'blue'}
-# colors.add('red')      # добавление эленента во множество, если добавили существующий, то ничго не изменится
-# print(colors)          # {'red', 'green', 'blue'}
-# colors.add('gray')
-# print(colors)          # {'red', 'green', 'blue','gray'}
-# colors.remove('red')   # удаление эленемна, НО если элемента нет, то выйдет ошибка
-# print(colors)          # {'green', 'blue','gray'}
-# #colors.remove('red')  # KeyError: 'red'
-# colors.discard('red')  # удаление элемента, НО функция проверяет есть ли значение в множестве, если есть, то удаляет
-# print(colors)  
-# colors.clear()         # очистка множества
-# print(colors)          # set() - пустое множество
+dictionary = {}
+dictionary = {'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
+print(dictionary)         # {'up':'↑', 'left':'←', 'down':'↓', 'right':'→'}
+print(dictionary['left']) # ← типы ключей могут отличаться
+print(dictionary['up'])   # ↑ типы ключей могут отличаться
+dictionary['left'] = '⇐'
+print(dictionary['left']) # ⇐
+# print(dictionary['type']) # KeyError: 'type'
+del dictionary['left']    # удаление элемента
+print(dictionary)         # {'up': '↑', 'down': '↓', 'right': '→'}
+print('1.Работа цикла for_ВЫВОДИМ КЛЮЧИ----------------------')
+for i in dictionary:       #ВЫВОДИТ КЛЮЧИ :
+    print(i)               # up
+                           # down
+                           # right
+print('2.Работа цикла for_ВЫВОДИМ ЭЛЕМЕНТЫ---------------------')
+for i in dictionary:       #ВЫВОДИТ элементы :
+    print(dictionary[i])   # ↑
+                           # ↓
+                           # →
+print(dictionary.items())  # dict_items([('up', '↑'), ('down', '↓'), ('right', '→')])
+                           # dictionary.items()-выводит список, где каждый элемент-кортеж из двух элементов: Ключ, Значение
+print('3.Работа цикла for_items()--------------------')
+for (k,v) in dictionary.items():   #в k -ключи,в v-значение :
+    print(k,v)                     # up ↑
+                                   # down ↓
+                                   # right →
+print('4.Работа цикла for_items()--------------------')
+for (k) in dictionary.items():   # в k запишит кортежи-элементы списка :
+    print(k)                     # ('up', '↑')
+                                 # ('down', '↓')
+                                 # ('right', '→')
+print('МНОЖЕСТВА !!!!!!!!!!!!!!!!!!!!!!!!!!')
+# Множества содержат в себе уникальные элементы, не обязательно упорядоченные.
+# Одно множество может содержать значения любых типов. Если у Вас есть два множества,
+# Вы можете совершать над ними любые стандартные операции, например, объединение,
+# пересечение и разность. Давайте разберем их.
+q=set()                # создаем пустое множество
+print('множество q=',q) # множество q= set()
+colors = {'red', 'green', 'blue'}
+print(colors)          # {'red', 'green', 'blue'}
+colors.add('red')      # добавление эленента во множество, если добавили существующий, то ничго не изменится
+print(colors)          # {'red', 'green', 'blue'}
+colors.add('gray')
+print(colors)          # {'red', 'green', 'blue','gray'}
+colors.remove('red')   # удаление эленемна, НО если элемента нет, то выйдет ошибка
+print(colors)          # {'green', 'blue','gray'}
+#colors.remove('red')  # KeyError: 'red'
+colors.discard('red')  # удаление элемента, НО функция проверяет есть ли значение в множестве, если есть, то удаляет
+print(colors)  
+colors.clear()         # очистка множества
+print(colors)          # set() - пустое множество
 
 
-# print('Операции со множествами в Python:-------------------')
-# a = {1, 2, 3, 5, 8}
-# b = {2, 5, 8, 13, 21}
-# c = a.copy() # c = {1, 2, 3, 5, 8}. Копирование множества a в переменную с
-# u = a.union(b) # u = {1, 2, 3, 5, 8, 13, 21} . Объединение множеств
-# print('u=',u)
-# i = a.intersection(b) # i = {8, 2, 5}. Пересечение множеств
-# dl = a.difference(b) # dl = {1, 3}.  Разность a-b
-# dr = b.difference(a) # dr = {13, 21} . Разность b-a
-# q = a.union(b).difference(a.intersection(b))# {1, 21, 3, 13}. (a объед с b)-(а пересеч с b)
-# # Неизменяемое или замороженное множество(frozenset) — множество, с которым не будут
-# # работать методы удаления и добавления.
-# b = frozenset(a)
-# print('b=',b) # frozenset({1, 2, 3, 5, 8})
+print('Операции со множествами в Python:-------------------')
+a = {1, 2, 3, 5, 8}
+b = {2, 5, 8, 13, 21}
+c = a.copy() # c = {1, 2, 3, 5, 8}. Копирование множества a в переменную с
+u = a.union(b) # u = {1, 2, 3, 5, 8, 13, 21} . Объединение множеств
+print('u=',u)
+i = a.intersection(b) # i = {8, 2, 5}. Пересечение множеств
+dl = a.difference(b) # dl = {1, 3}.  Разность a-b
+dr = b.difference(a) # dr = {13, 21} . Разность b-a
+q = a.union(b).difference(a.intersection(b))# {1, 21, 3, 13}. (a объед с b)-(а пересеч с b)
+# Неизменяемое или замороженное множество(frozenset) — множество, с которым не будут
+# работать методы удаления и добавления.
+b = frozenset(a)
+print('b=',b) # frozenset({1, 2, 3, 5, 8})
 print("List Comprehension_«генератора списка»!!!!!!!!!!!!!!!!!!!!!")
 # List comprehension — это
 # упрощенный подход к созданию списка, который задействует цикл for, а также инструкции
