@@ -18,5 +18,6 @@ for i in stroka:
         print(f'{i}_{res[i]}', end=' ') 
     else:
         print(i, end=' ')   
-    res[i] = res.get(i,0)+1
+    res[i] = res.get(i,0)+1 # res.get(i,0) - функция возвращает значение ключа i. если такого ключа нет, то фунуция=0
+    #print(res)
 print(res)
