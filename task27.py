@@ -9,9 +9,12 @@
 # shells on the sea shore I'm sure that the shells are sea
 # shore shells
 # Output: 13
-s="shells   I'm sure.So if   she sells sea   s s s s"
+s="shells   I'm sure.So if   she sells sea   S s S s"
+s=s.lower()
 print(s)
-s1=s.split() # перевод строки в список (по пробелам по умолчанию, но можно задать другой раделитель)
+s1=set(s.split()) # перевод строки в список (по пробелам по умолчанию, но можно задать другой раделитель)
 print(s1)
 print(len(s1))
+
+
                   
