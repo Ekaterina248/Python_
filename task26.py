@@ -21,3 +21,7 @@ c={1,2,3,4}
 print (type(c))   #<class 'set'>
 c='123456'
 print (type(c))   #<class 'str'>
+#--------------------
+m = '345'
+print(m * 2) # 2 раза повторит строку m 345345
+print(int(m)*2)
