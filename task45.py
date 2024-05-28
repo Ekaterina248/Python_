@@ -20,7 +20,7 @@
 
 def deliteli(n):   # функция нахождения делителей
     d=[1]    
-    for i in range(2,n):
+    for i in range(2,n//2+1):
         if n%i==0:
             d.append(i)
     return d  
@@ -36,12 +36,14 @@ n=int(input('Ввдите число: '))
 dic={}
 for i in range (1,n+1):
     dic[i]=sumspiska(deliteli(i))
-print(dic)
+#print(dic)
 
-# for i in dic:
-#     for j in dic:
-#         if dic[i]==dic(j):
-#             print(dic[i],dic[j])
+for i in dic:
+    if i>2:
+        for j in dic:
+            if j>i:
+                if dic[i]==j and dic[j]==i:
+                    print(dic[i],dic[j])
 
 
 
