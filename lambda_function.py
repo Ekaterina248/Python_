@@ -33,4 +33,17 @@ for i in data :
     if i % 2 == 0:
         out.append((i, i ** 2))
 print(out)
+print('ЗАДАЧА.1._Lambda Fuction-----------------------')
+def select(f,col):              # функция создает новый список из элементов f(x), где х - принимает значение элементов списка col
+    return[f(x) for x in col]   # см. Генератор списка.
+
+def where(f,col):                    # Взвращаем список из элементов списка col, для которых верно условие, заданное функцией f(x)
+    return[x for x in col if f(x) ]  # см. Генератор списка. 
+
+rez=select(int,data)   # перевели в тип int все числа списка data
+print(rez)
+rez=where(lambda x: x%2==0, rez) # Взвращаем список из элементов списка rez, для которых lambda функция = true
+print(rez)
+rez=select(lambda x: (x,x**2),rez) # Функция lambda возвращает кортеж из элеменов (x,x**2), где x-  принимает значение элементов списка rez
+print(rez)
 
