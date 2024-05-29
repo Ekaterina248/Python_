@@ -38,10 +38,10 @@ for i in range (1,n+1):
     dic[i]=sumspiska(deliteli(i))
 print(dic)
 
-# for i in dic:
-#     for j in dic:
-#         if dic[i]==dic(j):
-#             print(dic[i],dic[j])
+for i in dic:
+    #for j in dic:
+    if dic[i]==1:
+        print(i)
 
 
 
