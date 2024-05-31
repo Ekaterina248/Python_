@@ -18,5 +18,30 @@
 # имеющий такую площадь. Гарантируется, что самая далекая
 # планета ровно одна
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-print(*find_farthest_orbit(orbits))
+#print(*find_farthest_orbit(orbits))
 # вывод: 2.5 10
+
+print('МОЁ РЕШЕНИЕ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+pi=3.14
+#Список с площадями орбит///////////////////////////
+# s_orbits=[]
+# for i in orbits:
+#     s_orbits.append(i[0]*i[1]*pi)
+# print(s_orbits)  
+#Список с площадями орбит. lambda ///////////////////////////
+#s_orbits=list(map(lambda x: (x[0]*x[1]*pi),orbits))   
+#print(s_orbits)
+s_orbit_max=max(list(map(lambda x: (x[0]*x[1]*pi),orbits)))
+#print(s_orbit_max)
+rez=list(filter(lambda x: x[0]*x[1]*pi==s_orbit_max, orbits))
+print(rez[0][0], rez[0][1])
+#print(rez)
+#print(type(rez))
+
+print('МОЁ РЕШЕНИЕ_2 способ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+pi=3.14
+def find_farthest_orbit(orbits):
+    s_orbit_max=max(list(map(lambda x: (x[0]*x[1]*pi),orbits)))
+    rez=list(filter(lambda x: x[0]*x[1]*pi==s_orbit_max, orbits))
+    return rez
+print(*find_farthest_orbit(orbits))
